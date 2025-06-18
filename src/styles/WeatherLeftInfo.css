@@ -1,0 +1,122 @@
+.SearchBOX{
+    border-radius: 2rem;
+    width: 100%;
+}
+#searchLocationIcon{
+    font-size: 2rem;
+    
+}
+
+#searchContainer{
+    background-color: rgba(154, 150, 150, 0.858);
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    border-radius: 1.5rem;
+    padding: .4rem;
+    transition: all 0.7s ease; 
+}
+
+#searchBtn{  /*search button*/
+border-radius: 1rem;
+}
+
+/* --------------------------------------- */
+
+
+.initial {
+  justify-content: center;
+  margin-top: 20vh;
+  width: 100%;
+  margin-top: 20rem;
+}
+
+.afterSearch {
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: auto;
+}
+
+
+
+/****************************UPPER BOX **********************************/
+
+.leftUpperInfoBox{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.3rem;
+    padding-top: 4rem;
+    font-size: 1.1rem;
+}
+
+.leftUpperInfoBox > h1{  /*access the child*/
+    font-size: 5rem;
+}
+
+.leftUpperInfoBox > h2 {
+    font-size: 2.4rem;
+    font-weight: 500
+}
+
+
+/**************************** BUTTOM BOX **********************************/
+
+.leftButtomInfo{
+  height:25.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.1rem;
+  padding: 2rem;
+    
+}
+
+#leftButtomInfoDiv{
+    /* display: flex;
+    flex-direction: column; */
+     
+    height: 100%;
+    width: 100%;
+   background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 1rem;
+    padding: .8rem;
+    color: rgba(206, 206, 206, 0.836);
+    font-size: 1.2rem;
+   
+
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;     /* Vertically center icon and text */
+  justify-content: flex-start; /* Horizontally center if parent allows */
+  gap: 8px;                /* Adjust gap between icon and text */
+ 
+}
+
+/* SET individual text using inheritance */
+
+#leftButtomInfoDiv > div > h4{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+#leftButtomInfoDiv > div > p{
+    font-size: .99rem;
+    color: #dddddd;
+}
+
+#iconImage{
+    height: 120px;
+    width: 120px;
+    
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+       
+}

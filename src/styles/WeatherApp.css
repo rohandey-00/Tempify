@@ -1,0 +1,155 @@
+:root {
+  --image-url: url("https://images.unsplash.com/photo-1701051229414-aac7b7167cf2?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+     background-image: var(--image-url);
+    background-size:cover;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh; 
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--image-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(9px);
+  z-index: -1;
+ transition: all 0.6s ease-in-out;
+}
+
+.MainBoxApp{
+    height:55rem;
+    width: 116.5rem;
+    border-radius: 1.8rem;
+    background-color: rgba(16, 15, 15, 0.458);
+    display: flex;
+}
+
+
+
+.leftBox , .background-video{  /*parents of search box and leftInfoBox*/
+    width: 45rem;
+    height: 100%;
+    padding: 3rem;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.leftInfoBox{   /*parrent container*/
+    width: 100%;
+    height: 90%;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    
+    position: relative;
+     overflow: hidden;
+}
+
+.box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;       
+}
+
+.div1{
+ z-index: 1;
+ 
+}
+.div2{
+ z-index: 2;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  z-index: 3;
+  padding: 0;
+ border-radius: 2rem; 
+}
+
+.background-video {
+  
+  transition: opacity 1s ease-in-out;
+}
+.background-video.loaded {
+  opacity: 1;
+}
+/*########################################  LINE GRAPH DATA ########################################### */
+
+.RightBox{
+    padding: 3rem;
+}
+
+.hourForeCastBox{
+    height: 19rem;
+    width: 65rem;
+    background-color: rgba(16, 15, 15, 0.458);
+    border-radius: 2rem;
+    /* margin-top: 2rem; */
+    padding: 1rem;
+
+}
+
+
+/*########################################  DAY BASE INFORMATION ########################################### */
+
+.dayForecast{
+    height: 13rem;
+    width: 65rem;
+    background-color: rgba(16, 15, 15, 0.458);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: .8rem;
+}
+
+.icon-text {
+  color: rgba(206, 206, 206, 0.836);
+  font-size: 1.2rem;
+ 
+}
+
+.daysData{   /* 5 days forecast container*/
+    display: flex;
+    justify-content: space-evenly;   
+    
+}
+
+.dayForecastdiv{   /*Individual ICON*/
+    width: 10rem;
+    height: 8.5rem;
+    color: rgba(206, 206, 206, 0.836);
+    border-radius: .9rem;
+    padding: .8rem;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+
+.dayForecastdiv:hover{
+    background-color: rgba(184, 184, 184, 0.056);
+    transform: scale(1.1);
+}
+
