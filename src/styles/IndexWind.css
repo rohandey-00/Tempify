@@ -1,0 +1,177 @@
+
+.rightButtomBox{
+  display: flex;
+  justify-content: space-between;
+}
+.uv-card, .winnd-card {
+    height: 14rem;
+    width: 48%;
+    background-color: rgba(16, 15, 15, 0.595);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: .8rem;
+}
+
+
+.uv-header, .wind-header {
+  color: rgba(206, 206, 206, 0.836);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.uv-value, .wind-value {
+  font-size: 2.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+ 
+.uv-label {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.uv-scale {
+  position: relative;
+  height: 9px;
+  background: transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0 12px;
+}
+
+.uv-gradient {
+  height: 100%;
+  background: linear-gradient(to right, green, yellow, orange, red, magenta);
+}
+
+.uv-marker {
+  position: absolute;
+  top: -1px;
+  width: 11px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.uv-note {
+  font-size: .99rem;
+    color: #dddddd;
+}
+
+/*###################  COMPASS ######################*/
+
+
+.parrentWindCard{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+ 
+
+.compass-container {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(16, 15, 15, 0.458);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.compass-markers {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compass-label {
+  position: absolute;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.compass-label.top {
+  top: 0.25rem;
+}
+.compass-label.bottom {
+  bottom: 0.25rem;
+}
+.compass-label.left {
+  left: 0.25rem;
+}
+.compass-label.right {
+  right: 0.25rem;
+}
+
+.tick-mark {
+  position: absolute;
+  width: 1px;
+  height: 0.25rem;
+  background-color: white;
+  opacity: 0.4;
+}
+
+.needle-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 3px rgba(255, 255, 255, 0.25));
+}
+
+.needle-svg {
+  z-index: 10;
+  overflow: visible;
+  filter: drop-shadow(0 1px 3px rgba(255, 255, 255, 0.15));
+}
+
+.compass-center {
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: white;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compass-dot {
+  width: 0.125rem;
+  height: 0.125rem;
+  background-color: #777;
+  border-radius: 9999px;
+}
+
+.wind-value{
+  display: flex;
+}
+
+#windkm{
+  color: rgba(206, 206, 206, 0.836);  
+  font-size: 1.2rem;
+  position: relative;
+  top:1rem;     /*mendatory to use position relative*/
+  
+}
+
+#windDirName{
+  color: #ccc;
+  font-size: 2rem;
+  position: relative;
+  top:1rem;
+  font-weight: 600;
+  
+}
