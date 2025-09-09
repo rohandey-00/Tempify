@@ -1,13 +1,17 @@
 {
+  "homepage": "https://rohandey-00.github.io/Weather-App",
   "name": "weather-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -17,6 +21,7 @@
     "@mui/material": "^7.1.1",
     "@mui/x-charts": "^8.5.1",
     "framer-motion": "^12.16.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

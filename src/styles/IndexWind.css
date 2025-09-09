@@ -175,3 +175,32 @@
   font-weight: 600;
   
 }
+
+
+
+
+
+
+@media(max-width:450px){
+  
+  .rightButtomBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+     
+  
+}
+  .uv-card, .winnd-card {
+    height: 14rem;
+    width: 25rem;
+    /* margin-left: 43rem; */
+    background-color: rgba(16, 15, 15, 0.595);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: .8rem;
+}
+
+
+}
