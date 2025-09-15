@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "node src/App.jsx",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
