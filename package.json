@@ -7,13 +7,11 @@
   "scripts": {
     "dev": "vite",
     "start": "node src/App.jsx",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
