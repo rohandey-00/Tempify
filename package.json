@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rohandey-00.github.io/Weather-App",
+  "homepage": "https://rohandey-00.github.io/Tempify/",
   "name": "weather-app",
   "private": true,
   "version": "0.0.0",
@@ -11,8 +11,9 @@
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"    
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
